@@ -25,7 +25,9 @@
 #include <memory> /* std::shared_ptr */
 #include <vector>
 
+#ifndef Q_MOC_RUN
 #include <boost/unordered_map.hpp>
+#endif
 
 #include <QTextDocument>
 

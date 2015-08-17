@@ -24,11 +24,13 @@
 
 #include <algorithm>
 
+#ifndef Q_MOC_RUN
 #include <boost/optional.hpp>
 #include <boost/range/begin.hpp>
 #include <boost/range/end.hpp>
 #include <boost/range/iterator.hpp>
 #include <boost/range/value_type.hpp>
+#endif 
 
 namespace nc {
     namespace range_protected {

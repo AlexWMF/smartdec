@@ -22,6 +22,7 @@
 #ifndef ARX_FOREACH_H
 #define ARX_FOREACH_H
 
+#ifndef Q_MOC_RUN
 //#include <arx/config.h>
 #include <boost/config.hpp> /* For BOOST_NO_AUTO_DECLARATIONS. */
 #include <boost/foreach.hpp>
@@ -33,6 +34,7 @@
 #  define ARX_FOREACH_AUTO_ELEMENT(NAME, CONTAINER) boost::range_value<BOOST_TYPEOF(CONTAINER)>::type &NAME
 #else
 #  define ARX_FOREACH_AUTO_ELEMENT(NAME, CONTAINER) auto NAME
+#endif
 #endif
 
 /* Undefine qt foreach. */
